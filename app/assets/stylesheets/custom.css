@@ -34,6 +34,40 @@ a:hover{
 .bottom .copyright p, .bottom .copyright a:hover{
     color: white;
 }
+
+.small-middle-container{
+	margin: auto;
+	width: 40%;
+}
+
+.card-size{
+  margin: auto;
+  width: 55%;
+}
+
+img {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.attachment {
+   display: block;
+   position: relative;
+   max-width: 50%;
+   margin: 0;
+   padding: 0;
+
+}
+
+
+body{
+	background: url("bg.png")
+}
+
+
 /* fim das classes do footer*/
 
 /*body {
