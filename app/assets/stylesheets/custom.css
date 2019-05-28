@@ -2,6 +2,8 @@
 
 }
 
+
+
 /* classes do footer */
 .section-padding {
 	padding: 60px 0;
@@ -25,7 +27,7 @@
     font-weight: 400;
 }
 .copyright p span {
-    color: #d1caca;
+    color: #FFFFFF;
 }
 .bottom .copyright p, .bottom .copyright a:hover{
     color: white;
@@ -106,4 +108,26 @@ a:hover {
 
 .push-menu{
   padding-left: 20px;
+}
+
+.page-padding{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+.card-padding{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.card{
+   font-family: 'Noto Sans HK', sans-serif;
+}
+
+.card-color{
+  color:;
 }
