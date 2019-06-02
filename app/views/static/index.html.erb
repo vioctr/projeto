@@ -22,3 +22,9 @@
 <br>
 
 <p> aqui voce bota alguma coisa de texto sei lá algo de apresentação de site </p>
+
+<% @posts.each do |post| %>
+
+   <h4><%= link_to post.title, post %></h4>
+ <br>
+<% end %>
