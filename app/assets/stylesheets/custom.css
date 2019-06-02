@@ -43,6 +43,15 @@
   width: 55%;
 }
 
+.linha{
+      border-top: 1px dashed ;
+      border-bottom: 1px solid ;
+      color: #29091F;
+      height: 10px;
+      align:center;
+      width: 50%
+}
+
 /*img {
   max-width: 500px;
   height: auto;
@@ -62,10 +71,49 @@
 */
 
 
-body{
-	background: url("bg.png")
+.sobre{
+    /*background-image: url("banner.jpg");*/
+    font-family:Impact, fantasy;
+    background-position: center center;
+    height: 5em;
+    text-align: center;
+   margin-top: -1%;
+   border-width: 0 0 1px 0;
 }
 
+h2{
+  margin-top: 5%;
+}
+
+  #icones{
+    color: #2DC7FF;
+   margin-left: 25%;
+  }
+
+  h3{
+    font-family: Georgia;
+    margin-top: -5%;
+     margin-left: 15%;
+
+  }
+
+  p{
+     font-family: Georgia;
+     color:#696969;
+     font-size: 13px;
+  }
+
+  .links{
+    background-color: #84D0FF; 
+    border-style: solid;
+    border-color: #B4C5E4;
+    border-width: 5px;
+  }
+
+  .h2{
+    font-family: Georgia;
+    
+  }
 
 /* fim das classes do footer*/
 
@@ -73,6 +121,10 @@ body{
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
 } */
+
+.style1{
+  margin-top: 2%;
+}
 
 .navbar-logo-bg{
   background-color: #FFFFFF;
