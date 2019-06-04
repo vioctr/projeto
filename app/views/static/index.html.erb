@@ -53,21 +53,20 @@
   </div>
 </section>
 <center>
-  <div class="links">
-    <h2 class="h2"> Fique por dentro dos nossos projetos</h2>
-    <% @posts.each do |post| %>
+  
 
-    <h4><%= link_to post.title, post %></h4>
+  <div class="card">
+  <div class="card-header">
+     Fique por dentro dos nossos projetos
+  </div>
+  <div class="card-body">
+     <% @posts.each do |post| %>
+    <blockquote class="blockquote mb-0">
+     <h4><%= link_to post.title, post %></h4>
+      <footer class="blockquote-footer">Associação de Moradores - Carás do Umari</footer>
+    </blockquote>
     <br>
     <% end %>
   </div>
-  <div>
-    <ul>
-      <li><a href=#> PROJETO 1</a>
-        <li><a href=#> PROJETO 2</a>
-          <li><a href=#> PROJETO 3</a>
-            <li><a href=#> PROJETO 4</a>
-              <li><a href=#> PROJETO 5</a> 
-              </div>
-            </center>
-            >>>>>>> 823d010f4524412c9640033569eeb523a7df39e2
+</div>
+ 
