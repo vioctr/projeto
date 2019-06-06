@@ -90,10 +90,13 @@ h2{
    margin-left: 25%;
   }
 
+  .color-post-title{
+     color: #2DC7FF !important;
+  }
   h3{
     font-family: Georgia;
     margin-top: -5%;
-     margin-left: 15%;
+    margin-left: 15%;
 
   }
 
@@ -103,16 +106,17 @@ h2{
      font-size: 13px;
   }
 
-  .links{
-    background-color: #84D0FF; 
-    border-style: solid;
-    border-color: #B4C5E4;
-    border-width: 5px;
+  #links{
+    font-family: georgia;
+    font-size: 14px;
+    background-color: #F9FEFF;
   }
-
   .h2{
     font-family: Georgia;
-    
+  }
+
+  h4{
+   font-family:Impact, fantasy;
   }
 
 /* fim das classes do footer*/
