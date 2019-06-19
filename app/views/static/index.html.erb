@@ -1,13 +1,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= image_tag 'img1.png', class: 'd-block w-100' %>
+      <%= image_tag 'img1', class: 'd-block w-100' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'img2.jpg', class: 'd-block w-100' %>
+      <%= image_tag 'img2', class: 'd-block w-100' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'img3.jpg', class: 'd-block w-100' %>
+      <%= image_tag 'img3', class: 'd-block w-100' %>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -32,14 +32,14 @@
         <div class="box highlight">
           <i id="icones" class="fas fa-tractor fa-4x"></i>
           <h3 class="font-weight-bold">Comunidade</h3>
-          <p class="text-justify">O Sitio Caras do Umari localiza-se no Distrito Padre Cicero na cidade de Juazeiro do Norte. É cituado na zona rual da cidade com uma quantidade estimada de 957 moradores.</p>
+          <p class="text-justify">O Sitio Caras do Umari localiza-se no Distrito Padre Cicero na cidade de Juazeiro do Norte. É situado na zona rual da cidade com uma quantidade estimada de 957 moradores.</p>
         </div>
       </section>
       <section class="col-4 col-12-narrower">
         <div class="box highlight">
           <i id="icones" class="fas fa-users fa-4x"></i>
           <h3 class="font-weight-bold">Associação</h3>
-          <p class="text-justify">A Associação dos Moradores do St. Carás do Umari é uma instituição sem fins lucrativos, fundada em xxxx e desde então busca com dedicação cumprir o objetivo proposto.</p>
+          <p class="text-justify">A Associação dos Moradores do St. Carás do Umari é uma instituição sem fins lucrativos, fundada em 1987 e desde então busca com dedicação cumprir o objetivo proposto.</p>
         </div>
       </section>
       <section class="col-4 col-12-narrower">
@@ -53,14 +53,20 @@
   </div>
 </section>
 <center>
+  
+
   <div class="card">
-  <div id="links" class="card-header">
-     <h4> Fique por dentro dos nossos projetos </h4>
+  <div class="card-header">
+     Fique por dentro dos nossos projetos
   </div>
   <div class="card-body">
      <% @posts.each do |post| %>
     <blockquote class="blockquote mb-0">
-     <h5><%= link_to post.title, post,class:'color-post-title' %></h5>
+          <div class="card">
+        <div class="card-body">
+         <strong><h4><%= link_to post.title, post %></h4></strong>
+        </div>
+      </div>
     </blockquote>
     <br>
     <% end %>
