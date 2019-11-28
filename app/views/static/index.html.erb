@@ -19,57 +19,73 @@
     <span class="sr-only">Próximo</span>
   </a>
 </div>
+
 <br>
 
-<div class="sobre">
-  <h2> Conheça quem somos </h2>
-  <hr class="linha">
+<section id="about" class="wow fadeInUp">
+ <div class="container">
+  <div class="row">
+    <div class="col-lg-6 about-img">
+      <%= image_tag 'about-img', class: 'tamanho-image' %>
+    </div>
+
+    <div class="col-lg-6 content">
+
+
+      <h2>Sobre a Associação</h2>
+      <h3>OA Associação dos Moradores do Sítio Carás do Umarí é uma instituição privada, localizada na Zona Rural do municipio de Juazeiro Do Norte - CE. Fundada em 04/01/1987 pelo morador da comunidade, o senhor Manoel do Nascimento. Desde do seu surgimento, estamos mobilizando os moradores da comunidade para juntos construirmos projetos que venham melhorar a qualidade de vida dos agricultores e moradores residentes na localidade. Nossos projetos incluem temas como atividades agrículas, salário maternidade rural, aposentadoria rural, seguro safra, integração de moradores, além de outros.</h3>
+
+      <h3> Na associação encontra-se </h3>
+      <ul>
+        <li><i class="fas fa-home"></i>  Mais de 350 moradias;</li>
+        <li><i class="fas fa-volleyball-ball"></i>  Quadra poliesportiva;</li>
+        <li><i class="fas fa-store-alt"></i></i>  Estabelecimentos de outras finalidades (comercial, religioso, outros) ;</li>
+        <li><i class="fas fa-clinic-medical"></i>  Posto de Saúde;</li>
+        <li><i class="fas fa-users"></i>  Estimativa de mais de 900 moradores.</li>
+        É importante que um número cada vez maior de moradores se associe.
+
+        Com a contribuíção de todos associados poderemos melhorar a nossa qualidade de vida e fazer da nossa comunidade um local ideal para viver, investir e curtir a natureza.
+      </ul>
+      É importante que um número cada vez maior de moradores se associe.
+
+      Com a contribuíção de todos associados poderemos melhorar a nossa qualidade de vida e fazer da nossa comunidade um local ideal para viver, investir e curtir a natureza.
+    </div>
+  </div>
 </div>
-<section class="style1">
+</section>
+
+<section id="services">
+
   <div class="container">
-    <div class="row gtr-200">
-      <section class="col-4 col-12-narrower">
-        <div class="box highlight">
-          <i id="icones" class="fas fa-tractor fa-4x"></i>
-          <h3 class="font-weight-bold">Comunidade</h3>
-          <p class="text-justify">O Sitio Caras do Umari localiza-se no Distrito Padre Cicero na cidade de Juazeiro do Norte. É situado na zona rual da cidade com uma quantidade estimada de 957 moradores.</p>
+    <div class="section-header">
+      <h2>Projetos Desenvolvidas</h2>
+    </div>
+
+    <div class="row">
+      <% @posts.each do |post| %>
+      <div class="col-lg-6">
+        <div class="box wow fadeInRight" data-wow-delay="0.2s">
+          <div class="icon"><i class="fas fa-globe-americas"></i></div>
+          <h4 class="title"><%= link_to post.title, post %></h4>
         </div>
-      </section>
-      <section class="col-4 col-12-narrower">
-        <div class="box highlight">
-          <i id="icones" class="fas fa-users fa-4x"></i>
-          <h3 class="font-weight-bold">Associação</h3>
-          <p class="text-justify">A Associação dos Moradores do St. Carás do Umari é uma instituição sem fins lucrativos, fundada em 1987 e desde então busca com dedicação cumprir o objetivo proposto.</p>
-        </div>
-      </section>
-      <section class="col-4 col-12-narrower">
-        <div class="box highlight">
-          <i id="icones" class="fas fa-thumbtack fa-4x"></i>
-          <h3 class="font-weight-bold">Objetivo</h3>
-          <p class="text-justify">O objetivo da Associação é buscar melhoria para a comunidade frente ao poder governante, visando sempre o crescimento e beneficio da comunidade.</p>
-        </div>
-      </section>
+      </div>
+      <% end %>
     </div>
   </div>
 </section>
-<center>
-  
 
-  <div class="card">
-  <div class="card-header">
-     Fique por dentro dos nossos projetos
+
+
+<section id="clients" class="wow fadeInUp">
+  <div class="container">
+    <div class="section-header">
+      <h2>Associe-se</h2>
+      <p> Seja associado a nossa empresa! </p>
+    </div>
+
+    <div class="col text-center">
+      <button type="button" class="btn btn-primary">Associe-se</button>
+    </div>
+
   </div>
-  <div class="card-body">
-     <% @posts.each do |post| %>
-    <blockquote class="blockquote mb-0">
-          <div class="card">
-        <div class="card-body">
-         <strong><h4><%= link_to post.title, post %></h4></strong>
-        </div>
-      </div>
-    </blockquote>
-    <br>
-    <% end %>
-  </div>
-</div>
- 
+</section><!-- #clients -->

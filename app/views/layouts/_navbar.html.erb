@@ -1,42 +1,34 @@
-<div class="navbar navbar-expand-lg navbar-light navbar-logo-bg border-nav-bottom">
-	<div class="mx-auto d-block">
-		<div class="row">
-			<div class="col-sm-12">
-				<%= image_tag("lg.png", :alt => "logo") %>
-			</div>
+
+<section id="topbar" class="d-none d-lg-block">
+	<div class="container clearfix">
+		<div class="contact-info float-left">
+			<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">nexti@fapce.edu.br</a>
+			<i class="fa fa-phone"></i> +55 88 35123299
+		</div>
+		<div class="social-links float-right">
+			<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+			<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="navbar navbar-expand-lg navbar-light navbar-logo-bg2 border-nav-bottom">
-	<nav class="mx-auto d-block">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<div class="menu">
+<header id="header">
+	<div class="container">
+
+		<div id="logo" class="pull-left">
+			<h1><a href="#body" class="scrollto color-nex">AMS<span>CU</span></a></h1>
+			<h6><a href="#body" class="scrollto color-nex"><span>Associação dos Moradores do Sítio Carás do Umari</span></a></h6>
+			<!-- Uncomment below if you prefer to use an image logo -->
+			<!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
 					<%= link_to "Início", root_path, class: 'push-menu' %>
 					<%= link_to "A Associação", about_path, class: 'push-menu' %>
 					<%= link_to "Projetos", posts_path, class: 'push-menu' %>
-				</div>
-			</div>
-		</div>
-	</nav>
-</div>
 
-<!--<div class="navbar navbar-expand-lg navbar-light navbar-logo-bg border-nav-bottom">
-	<nav class="mx-auto d-block">
-		<div class="row">
-			<div class="col-sm-12">
-				<%= image_tag("logo.png", :alt => "logo") %>
-			</div>
-			<div class="col-sm-12 text-center">
-				<div class="menu">
-					<a class="push-menu" href="#"> Início </a>
-					<a class="push-menu" href="#">  A associação </a>
-					<a class="push-menu" href="#"> Projetos </a>
-				</div>
-			</div>
+				</ul>
+			</nav><!-- #nav-menu-container -->
 		</div>
-	</nav>
-</div>
-
- -->
+	</div>
+</header><!-- #header -->
