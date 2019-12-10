@@ -5,6 +5,7 @@ class AssociatesController < ApplicationController
   # GET /associates.json
   def index
     @associates = Associate.all
+
   end
 
   # GET /associates/1
@@ -28,7 +29,7 @@ class AssociatesController < ApplicationController
 
     respond_to do |format|
       if @associate.save
-        format.html { redirect_to @associate, notice: 'Associate was successfully created.' }
+        format.html { redirect_to @associate, notice: 'Cadastro realizado com sucesso!' }
         format.json { render :show, status: :created, location: @associate }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class AssociatesController < ApplicationController
   def update
     respond_to do |format|
       if @associate.update(associate_params)
-        format.html { redirect_to @associate, notice: 'Associate was successfully updated.' }
+        format.html { redirect_to @associate, notice: 'Cadastro atualizado com sucesso!' }
         format.json { render :show, status: :ok, location: @associate }
       else
         format.html { render :edit }
@@ -56,7 +57,7 @@ class AssociatesController < ApplicationController
   def destroy
     @associate.destroy
     respond_to do |format|
-      format.html { redirect_to associates_url, notice: 'Associate was successfully destroyed.' }
+      format.html { redirect_to associates_url, notice: 'Cadastro apagado com sucesso!' }
       format.json { head :no_content }
     end
   end

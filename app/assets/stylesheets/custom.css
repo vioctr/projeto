@@ -6,3 +6,26 @@
 	length:40%;
 	height:40%;
 }
+
+#slogan{
+	rightS: -25%;
+}
+
+
+#p1{
+	font-size:150%;
+	color: #6E6E6E;
+	 font-family: "Montserrat", sans-serif;
+	text-align: center;
+}
+
+.card-title{
+	color: #6E6E6E;
+	text-align: center;
+}
+
+.scrollto color-nex{
+	color: #6E6E6E;
+	text-align: left;
+}
+

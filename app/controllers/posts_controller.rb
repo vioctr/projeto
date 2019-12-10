@@ -14,6 +14,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
+    render :layout => false
     @post = Post.new
   end
 

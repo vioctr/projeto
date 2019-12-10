@@ -12,4 +12,8 @@ class StaticController < ApplicationController
 		render params[:page]
 	end
 
+	def contact
+		@associate = Associate.new
+	end
+
 end

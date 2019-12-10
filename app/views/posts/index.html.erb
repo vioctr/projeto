@@ -1,18 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <br>
+<br>
+<center>
 <div class="container h-100 page-padding">
 	<div class="card card-padding">
-		<div class="card-body text-justify" style="color: #4b71b7;">
-			<h5 class="card-title" style="color: #935FA7">Projetos Comunitários</h5>
+		<div class="card-body text-justify">
+			<h2 class="card-title">Projetos Comunitários</h2>
 			
 			<% @posts.each do |post| %>
-			<h4 style="color: #4b71b7"><%= link_to post.title, post %></h4>
+			<h4><%= link_to post.title, post %></h4>
 			<% end %>
 		</div>
 	</div>
 </div>
 </div>
+</center>
 <br>
-
-<%= link_to 'New Post', new_post_path %>
+<button type="button" class="btn btn-outline-info">
+<%= link_to 'Novo post', new_post_path %>
+</button>

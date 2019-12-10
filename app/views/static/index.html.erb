@@ -58,7 +58,7 @@
 
   <div class="container">
     <div class="section-header">
-      <h2>Projetos Desenvolvidas</h2>
+      <h2>Projetos Desenvolvidos</h2>
     </div>
 
     <div class="row">
@@ -68,9 +68,10 @@
           <div class="icon"><i class="fas fa-globe-americas"></i></div>
           <h4 class="title"><%= link_to post.title, post %></h4>
         </div>
+        </div>
       </div>
       <% end %>
-    </div>
+    
   </div>
 </section>
 
@@ -78,14 +79,57 @@
 
 <section id="clients" class="wow fadeInUp">
   <div class="container">
+
     <div class="section-header">
-      <h2>Associe-se</h2>
+       <h2>Associe-se</h2>
       <p> Seja associado a nossa empresa! </p>
     </div>
 
-    <div class="col text-center">
-      <button type="button" class="btn btn-primary">Associe-se</button>
-    </div>
+      <p id="p1"> Quer saber das novidades e ajudar a associação a trazer mais benefícios para a nossa comunidade? Responda o formulário e torne-se um associado. </p>
+      <center>
+    <button type="button" class="btn btn-outline-info">
+    <%= link_to "Associe-se", new_associate_path %>
+   </button>
+   </center>
+
 
   </div>
 </section><!-- #clients -->
+<section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contato</h2>
+          <p>Onde e como nos encontrar</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Endereço</h3>
+              <address>Sitio Carás do Umari- Zona rural - Juazeiro do Norte, CE -
+              CEP: 63010-970</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Fone</h3>
+              <p><a href="tel:+155895548855">+55 (88) 3512-3299</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">associacaocarasumari@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
