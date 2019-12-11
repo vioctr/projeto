@@ -15,6 +15,7 @@
 <center>
 <div class="card" style="width: 40rem;">
   <div class="card-body">
+    <h5 class="card-title">Visualizando informações do associado</h5>
 <form>
   <div class="form-group" style="text-align: left;">
       <%= form.label :nome %>
@@ -37,8 +38,8 @@
   </div>
  
   <div class="form-group" style="text-align: left;">
-    <%= form.label :numero %>
-    <%= form.text_field :numero, class: 'form-control', disabled: true %>
+    <label> Número </label>
+    <%= form.text_field :numero, class: 'form-control', disabled: true%>
   </div>
 
   <div class="form-group" style="text-align: left;">
@@ -47,13 +48,13 @@
   </div>
 
   <div class="form-group" style="text-align: left;">
-    <%= form.label :uf %>
-    <%= form.text_field :uf, class: 'form-control', disabled: true %>show associa
+     <label> UF </label>
+    <%= form.text_field :uf, class: 'form-control', disabled: true %>
   </div>
 
   <div class="form-group" style="text-align: left;" >
-    <%= form.label :cep %>
-    <%= form.text_field :cep, class: 'form-control', disabled: true%>
+     <label> CEP   </label>
+    <%= form.text_field :cep, class: 'form-control', disabled: true %>
   </div>
 
   <div class="form-group" style="text-align: left;">
@@ -62,21 +63,23 @@
   </div>
 
   <div class="form-group" style="text-align: left;">
-    <%= form.label :ddd %>
+     <label> DDD </label>
     <%= form.text_field :ddd, class: 'form-control', disabled: true %>
   </div>
 
   <div class="form-group" style="text-align: left;">
     <%= form.label :telefone %>
-    <%= form.text_field :telefone, class: 'form-control', disabled: true%>
+    <%= form.text_field :telefone, class: 'form-control', disabled: true %>
   </div>
 
   <div class="form-group" style="text-align: left;">
-    <%= form.label :email %>
+     <label> E-mail </label>
     <%= form.text_field :email, class: 'form-control', disabled: true %>
   </div>
+  
 </form>
 </div>
 </div>
 <% end %>
 </center>
+

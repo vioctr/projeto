@@ -1,27 +1,31 @@
 <p id="notice"><%= notice %></p>
-<h1 style="text-align: center">Associados</h1>
+<br> 
+<br>
+<h1 class="text-center">Associados 
+  <%= link_to '<i class="fas fa-plus-circle"></i>'.html_safe, new_associate_path, class: 'btn-lg' %></h1> 
 
-<table class= "table">
-  <thead>
-    <tr>
-      <th scope="col">Nome</th>
-      <th scope="col">Sobrenome</th>
-      <th scope="col">Rua</th>
-      <th scope="col">Bairro</th>
-      <th scope="col">Numero</th>
-      <th scope="col">Cidade</th>
-      <th scope="col">Uf</th>
-      <th scope="col">Cep</th>
-      <th scope="col">Complemento</th>
-      <th scope="col">DDD</th>
-      <th scope="col">Telefone</th>
-      <th scope="col">Email</th>
-      <th colspan="3">Ações </th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @associates.each do |associate| %>
+  <table class= "table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sobrenome</th>
+        <th scope="col">Rua</th>
+        <th scope="col">Bairro</th>
+        <th scope="col">Numero</th>
+        <th scope="col">Cidade</th>
+        <th scope="col">Uf</th>
+        <th scope="col">Cep</th>
+        <th scope="col">Complemento</th>
+        <th scope="col">DDD</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Email</th>
+        <th colspan="3">Ações </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @associates.each do |associate| %>
       <tr>
         <td scope="row"><%= associate.nome %></td>
         <td scope="row"><%= associate.sobrenome %></td>
@@ -39,11 +43,8 @@
         <td scope="row"><%= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_associate_path(associate) %></td>
         <td scope="row"><%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, associate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+      <% end %>
+    </tbody>
+  </table>
 
-<br>
-<button type="button" class="btn btn-outline-info">
-<%= link_to 'Adcionar', new_associate_path %>
-</button>
+
