@@ -1,13 +1,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= image_tag 'img1', class: 'd-block w-100' %>
+      <%= image_tag 'imagem2', class: 'd-block w-100' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'img2', class: 'd-block w-100' %>
+      <%= image_tag 'imagem4', class: 'd-block w-100' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'img3', class: 'd-block w-100' %>
+      <%= image_tag 'imagem3', class: 'd-block w-100' %>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -24,31 +24,36 @@
 
 <section id="about" class="wow fadeInUp">
  <div class="container">
+   <div class="section-header">
+    <h2>Sobre</h2>
+  </div>
   <div class="row">
     <div class="col-lg-6 about-img">
-      <%= image_tag 'about-img', class: 'tamanho-image' %>
+      <p class="about-size">A Associação dos Moradores do Sítio Carás do Umarí é uma instituição privada, localizada na Zona Rural do municipio de Juazeiro Do Norte - CE. Fundada em 04/01/1987 pelo morador da comunidade, o senhor Manoel do Nascimento. Desde do seu surgimento, estamos mobilizando os moradores da comunidade para juntos construirmos projetos que venham melhorar a qualidade de vida dos agricultores e moradores residentes na localidade. Nossos projetos incluem temas como atividades agrículas, salário maternidade rural, aposentadoria rural, seguro safra, integração de moradores, além de outros.</p>
+
+      <p> Na associação encontra-se </p>
+
+      <p>
+        <ul style="list-style-type: none; margin-left: -8%;">
+          <li><i class="fas fa-home"></i>  Mais de 350 moradias;</li>
+          <li><i class="fas fa-volleyball-ball"></i>  Quadra poliesportiva;</li>
+          <li><i class="fas fa-store-alt"></i></i>  Estabelecimentos de outras finalidades (comercial, religioso, outros) ;</li>
+          <li><i class="fas fa-clinic-medical"></i>  Posto de Saúde;</li>
+          <li><i class="fas fa-users"></i>  Estimativa de mais de 900 moradores.</li>
+        </ul>
+      </p>
+      
+      </div>
+
+    <div class="col-lg-6 about-size">
+      
+      <p class="about-size">É importante que um número cada vez maior de moradores se associe. Com a contribuíção de todos associados poderemos melhorar a nossa qualidade de vida e fazer da nossa comunidade um local ideal para viver, investir e curtir a natureza. 
+
+        É importante que um número cada vez maior de moradores se associe. 
+
+      Com a contribuíção de todos associados poderemos melhorar a nossa qualidade de vida e fazer da nossa comunidade um local ideal para viver, investir e curtir a natureza.</p>
     </div>
-
-    <div class="col-lg-6 content">
-
-
-      <h2>Sobre a Associação</h2>
-      <h3>OA Associação dos Moradores do Sítio Carás do Umarí é uma instituição privada, localizada na Zona Rural do municipio de Juazeiro Do Norte - CE. Fundada em 04/01/1987 pelo morador da comunidade, o senhor Manoel do Nascimento. Desde do seu surgimento, estamos mobilizando os moradores da comunidade para juntos construirmos projetos que venham melhorar a qualidade de vida dos agricultores e moradores residentes na localidade. Nossos projetos incluem temas como atividades agrículas, salário maternidade rural, aposentadoria rural, seguro safra, integração de moradores, além de outros.</h3>
-
-      <h3> Na associação encontra-se </h3>
-      <ul>
-        <li><i class="fas fa-home"></i>  Mais de 350 moradias;</li>
-        <li><i class="fas fa-volleyball-ball"></i>  Quadra poliesportiva;</li>
-        <li><i class="fas fa-store-alt"></i></i>  Estabelecimentos de outras finalidades (comercial, religioso, outros) ;</li>
-        <li><i class="fas fa-clinic-medical"></i>  Posto de Saúde;</li>
-        <li><i class="fas fa-users"></i>  Estimativa de mais de 900 moradores.</li>
-        É importante que um número cada vez maior de moradores se associe.
-
-        Com a contribuíção de todos associados poderemos melhorar a nossa qualidade de vida e fazer da nossa comunidade um local ideal para viver, investir e curtir a natureza.
-      </ul>
-      É importante que um número cada vez maior de moradores se associe.
-
-      Com a contribuíção de todos associados poderemos melhorar a nossa qualidade de vida e fazer da nossa comunidade um local ideal para viver, investir e curtir a natureza.
+      
     </div>
   </div>
 </div>
@@ -68,9 +73,9 @@
           <div class="icon"><i class="fas fa-globe-americas"></i></div>
           <h4 class="title"><%= link_to post.title, post %></h4>
         </div>
-        </div>
       </div>
-      <% end %>
+    </div>
+    <% end %>
     
   </div>
 </section>
@@ -81,55 +86,54 @@
   <div class="container">
 
     <div class="section-header">
-       <h2>Associe-se</h2>
-      <p> Seja associado a nossa empresa! </p>
-    </div>
+     <h2>Associe-se</h2>
+   </div>
 
-      <p id="p1"> Quer saber das novidades e ajudar a associação a trazer mais benefícios para a nossa comunidade? Responda o formulário e torne-se um associado. </p>
-      <center>
+   <p id="p1"> Quer saber das novidades e ajudar a associação a trazer mais benefícios para a nossa comunidade? Responda o formulário e torne-se um associado. </p>
+   <center>
     <button type="button" class="btn btn-outline-info">
-    <%= link_to "Associe-se", new_associate_path %>
-   </button>
-   </center>
+      <%= link_to "Associe-se", new_associate_path %>
+    </button>
+  </center>
 
 
-  </div>
+</div>
 </section><!-- #clients -->
 <section id="contact" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contato</h2>
-          <p>Onde e como nos encontrar</p>
-        </div>
+  <div class="container">
+    <div class="section-header">
+      <h2>Contato</h2>
+      <p>Onde e como nos encontrar</p>
+    </div>
 
-        <div class="row contact-info">
+    <div class="row contact-info">
 
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Endereço</h3>
-              <address>Sitio Carás do Umari- Zona rural - Juazeiro do Norte, CE -
-              CEP: 63010-970</address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Fone</h3>
-              <p><a href="tel:+155895548855">+55 (88) 3512-3299</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@example.com">associacaocarasumari@gmail.com</a></p>
-            </div>
-          </div>
-
+      <div class="col-md-4">
+        <div class="contact-address">
+          <i class="ion-ios-location-outline"></i>
+          <h3>Endereço</h3>
+          <address>Sitio Carás do Umari- Zona rural - Juazeiro do Norte, CE -
+          CEP: 63010-970</address>
         </div>
       </div>
 
-    </main>
+      <div class="col-md-4">
+        <div class="contact-phone">
+          <i class="ion-ios-telephone-outline"></i>
+          <h3>Fone</h3>
+          <p><a href="tel:+155895548855">+55 (88) 3512-3299</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="contact-email">
+          <i class="ion-ios-email-outline"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:info@example.com">associacaocarasumari@gmail.com</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>

@@ -1,21 +1,25 @@
-.color-nex {
-	color: rgb(0, 128, 188) !important;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.body {
+	font-family: 'Montserrat' !important;
 }
 
-.tamanho-image {
-	length:40%;
-	height:40%;
+.color-nex {
+	color: rgb(0, 128, 188) !important;
 }
 
 #slogan{
 	rightS: -25%;
 }
 
+.about-size {
+	font-weight: 10px !important
+	;
+}
 
 #p1{
-	font-size:150%;
-	color: #6E6E6E;
-	font-family: "Montserrat", sans-serif;
+	font-size:120%;
+	padding: 15px;
 	text-align: center;
 }
 
@@ -29,3 +33,38 @@
 	text-align: left;
 }
 
+.nav-item{
+	margin-left: 10%;
+	color: #000;
+}
+
+#topbar{
+	background-color: #000 ;
+	color: #ffffff !important
+	;
+}
+
+.color-menu {
+	color: black !important;
+}
+
+.logo{
+	width: 180px;
+	height: 180px;
+	margin-left: 10%;
+}
+
+nav{
+	margin-left: 8%;
+	text-transform: uppercase;
+	margin-top: -1.3%;
+}
+
+h4{
+	color: #6E6E6E;
+	font-weight: 400;
+}
+
+.col-lg-6{
+	text-align: justify;
+}
