@@ -14,7 +14,6 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    render :layout => false
     @post = Post.new
   end
 
@@ -68,7 +67,7 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Only allow a list of trusted parameters through.
     def post_params
       params.require(:post).permit(:title, :body)
     end
