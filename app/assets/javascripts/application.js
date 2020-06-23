@@ -12,6 +12,19 @@
 //
 //= require rails-ujs
 //= require jquery
+//= require aos
+//= require jquery-3.3.1.min
+//= require bootstrap
+//= require bootstrap.min
+//= require cable
+//= require popper.min
+//= require owl.carousel.min
+//= require jquery.sticky
+//= require jquery.waypoints.min
+//= require jquery.animateNumber.min
+//= require jquery.fancybox.min
+//= require jquery.easing.1.3
+
 //= require turbolinks
 //= require trix
 //= require_tree .
